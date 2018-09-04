@@ -2,9 +2,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.github.jsonld-java</groupId>
+	<groupId>io.bdrc</groupId>
 	<artifactId>jsonld-java-parent</artifactId>
-	<version>0.12.1-SNAPSHOT</version>
+	<version>0.12.2</version>
 	<name>JSONLD Java :: Parent</name>
 	<description>Json-LD Java Parent POM</description>
 	<packaging>pom</packaging>
@@ -479,21 +479,16 @@
 			</snapshots>
 		</repository>
 	</repositories>
-
-
-	<distributionManagement>
-		<snapshotRepository>
-			<id>sonatype-nexus-snapshots</id>
-			<name>Sonatype Nexus Snapshots</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-		</snapshotRepository>
-		<repository>
-			<id>sonatype-nexus-staging</id>
-			<name>Nexus Release Repository</name>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-		</repository>
-	</distributionManagement>
-
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+        </repository>
+    </distributionManagement>
 	<profiles>
 		<profile>
 			<id>sonatype-oss-release</id>
