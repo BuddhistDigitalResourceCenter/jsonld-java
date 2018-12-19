@@ -1,4 +1,4 @@
-**JSONLD-Java is looking for a maintainer**
+**JSONLD-Java is looking for a maintainer** 
 
 JSONLD-JAVA
 ===========
